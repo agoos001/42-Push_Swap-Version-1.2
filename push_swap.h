@@ -13,7 +13,8 @@
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 # include "ds_store.h"
-
+# include <stdlib.h>
+# include <unistd.h>
 // PS init
 void	init_ps(t_ps *ps);
 void	free_ps(t_ps *ps);

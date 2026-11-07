@@ -6,7 +6,7 @@
 /*   By: r03b </var/spool/mail/r03b>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 11:11:17 by r03b              #+#    #+#             */
-/*   Updated: 2026/11/07 11:11:34 by r03b             ###   ########.fr       */
+/*   Updated: 2026/11/07 12:21:59 by r03b             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ typedef struct s_ps
 	t_stack	a;
 	t_stack	b;
 	int		*nums;
+	int		n;
 	long	cnt[OP_COUNT];
 	int		print;
 	int		mode;
