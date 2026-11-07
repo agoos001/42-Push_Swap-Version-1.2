@@ -6,7 +6,7 @@
 /*   By: r03b </var/spool/mail/r03b>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 11:00:44 by r03b              #+#    #+#             */
-/*   Updated: 2026/11/07 11:14:41 by r03b             ###   ########.fr       */
+/*   Updated: 2026/11/07 12:42:31 by hhdili           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,11 @@
 void	init_ps(t_ps *ps);
 void	free_ps(t_ps *ps);
 void	exit_er(t_ps *ps);
+// utils
+size_t	ft_strlen(char const *s);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 // stack elements
 int		st_get(t_stack *s, int i);
 int		st_pop(t_stack *s);
