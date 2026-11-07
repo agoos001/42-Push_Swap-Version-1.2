@@ -6,11 +6,10 @@
 /*   By: hhdili <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 12:45:10 by hhdili            #+#    #+#             */
-/*   Updated: 2026/11/07 12:45:10 by hhdili           ###   ########.fr       */
+/*   Updated: 2026/11/07 12:52:35 by hhdili           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ds_store.h"
 #include "push_swap.h"
 
 void	init_ps(t_ps *ps)
@@ -48,7 +47,7 @@ void	free_all(t_ps *ps)
 }
 void	exit_er(t_ps *ps)
 {
-	write(2, "Error\n", 6);
+	ft_putendl_fd("Error\n", 2);
 	free_all(ps);
 	exit(1);
 }
