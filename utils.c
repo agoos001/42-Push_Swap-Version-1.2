@@ -21,6 +21,7 @@ size_t	ft_strlen(char const *s)
 		i++;
 	return (i);
 }
+
 void	ft_putchar_fd(const char c, int fd)
 {
 	write(fd, &c, 1);

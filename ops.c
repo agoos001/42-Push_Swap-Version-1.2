@@ -6,7 +6,7 @@
 /*   By: hhdili <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/08 10:03:49 by hhdili            #+#    #+#             */
-/*   Updated: 2026/11/08 10:14:30 by hhdili           ###   ########.fr       */
+/*   Updated: 2026/11/08 11:01:37 by hhdili           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ds_store.h"
@@ -35,11 +35,13 @@ static void	apply_pushes(t_ps *ps, t_op code)
 		push_from(&ps->a, &ps->b);
 }
 
+/*
 void	op(t_ps *ps, t_op code)
 {
-	op_apply(ps, code);
+	// op_apply(ps, code);
 	ps->cnt[code]++;
 	if (!ps->print)
 		return ;
 	ft_putendl_fd(op_name(code), 1);
 }
+*/

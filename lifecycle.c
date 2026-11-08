@@ -45,6 +45,7 @@ void	free_all(t_ps *ps)
 	ps->a.data = NULL;
 	ps->b.data = NULL;
 }
+
 void	exit_er(t_ps *ps)
 {
 	ft_putendl_fd("Error\n", 2);

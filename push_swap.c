@@ -6,7 +6,7 @@
 /*   By: hhdili <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 12:45:56 by hhdili            #+#    #+#             */
-/*   Updated: 2026/11/08 10:00:51 by hhdili           ###   ########.fr       */
+/*   Updated: 2026/11/08 11:58:56 by hhdili           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	main(int argc, char **argv)
 	a = malloc(sizeof(*a));
 	if (!a)
 		free(a);
-	a->cap = 5;
+	a->cap = 6;
 	a->size = 0;
 	a->data = malloc(sizeof(*a->data) * a->cap);
 	if (!(a->data))
@@ -43,6 +43,27 @@ int	main(int argc, char **argv)
 		printf("%d\n", st_get(a, i));
 	printf("swaped: %d & %d\n", 3, 2);
 	st_swap(a);
+	for (int i = 0; i < a->size; i++)
+		printf("%d\n", st_get(a, i));
+	st_rotate(a);
+	printf("rotate a:\n");
+	for (int i = 0; i < a->size; i++)
+		printf("%d\n", st_get(a, i));
+	st_rotate(a);
+	printf("Rrotate a:\n");
+	for (int i = 0; i < a->size; i++)
+		printf("%d\n", st_get(a, i));
+	st_rotate(a);
+	printf("Rrotate a:\n");
+	for (int i = 0; i < a->size; i++)
+		printf("%d\n", st_get(a, i));
+	st_rrotate(a);
+	printf("Rrotate a:\n");
+	for (int i = 0; i < a->size; i++)
+		printf("%d\n", st_get(a, i));
+	st_push(a, 5);
+	st_push(a, 6);
+	printf("Push 5 & 6:\n");
 	for (int i = 0; i < a->size; i++)
 		printf("%d\n", st_get(a, i));
 	free(a->data);
