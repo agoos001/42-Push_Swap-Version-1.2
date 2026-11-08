@@ -6,7 +6,7 @@
 /*   By: hhdili <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 12:45:56 by hhdili            #+#    #+#             */
-/*   Updated: 2026/11/07 16:43:35 by r03b             ###   ########.fr       */
+/*   Updated: 2026/11/08 10:00:51 by hhdili           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int	main(int argc, char **argv)
 	int		v;
 
 	a = malloc(sizeof(*a));
+	if (!a)
+		free(a);
 	a->cap = 5;
 	a->size = 0;
 	a->data = malloc(sizeof(*a->data) * a->cap);
@@ -37,6 +39,10 @@ int	main(int argc, char **argv)
 		printf("%d\n", st_get(a, i));
 	v = st_pop(a);
 	printf("poped: %d\n", v);
+	for (int i = 0; i < a->size; i++)
+		printf("%d\n", st_get(a, i));
+	printf("swaped: %d & %d\n", 3, 2);
+	st_swap(a);
 	for (int i = 0; i < a->size; i++)
 		printf("%d\n", st_get(a, i));
 	free(a->data);

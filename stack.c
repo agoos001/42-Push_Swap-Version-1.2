@@ -6,7 +6,7 @@
 /*   By: hhdili <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 12:52:12 by hhdili            #+#    #+#             */
-/*   Updated: 2026/11/07 16:42:32 by r03b             ###   ########.fr       */
+/*   Updated: 2026/11/08 09:51:51 by hhdili           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,12 +51,24 @@ void	st_rrotate(t_stack *s)
 {
 	int	v;
 
+	if (s->size < 2)
+		return ;
 	v = s->data[(s->head + s->size - 1) % s->cap];
 	s->size--;
 	st_push(s, v);
 }
-/*
+
 void	st_swap(t_stack *s)
 {
+	int	i0;
+	int	i1;
+	int	tmp;
+
+	if (s->size < 2)
+		return ;
+	i0 = s->head;
+	i1 = (s->head + 1) % s->cap;
+	tmp = s->data[i0];
+	s->data[i0] = s->data[i1];
+	s->data[i1] = tmp;
 }
-*/
