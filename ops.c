@@ -6,7 +6,7 @@
 /*   By: hhdili <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/08 10:03:49 by hhdili            #+#    #+#             */
-/*   Updated: 2026/11/10 11:41:49 by hhdili           ###   ########.fr       */
+/*   Updated: 2026/11/10 11:46:11 by hhdili           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -22,7 +22,7 @@ static void	apply_swaps(t_ps *ps, t_op code)
 {
 	if (code == OP_SA || code == OP_SS)
 		st_swap(&ps->a);
-	if (code == OP_SA || code == OP_SS)
+	if (code == OP_SB || code == OP_SS)
 		st_swap(&ps->b);
 }
 

@@ -6,7 +6,7 @@
 /*   By: r03b </var/spool/mail/r03b>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 09:57:56 by r03b              #+#    #+#             */
-/*   Updated: 2026/11/10 10:22:30 by hhdili           ###   ########.fr       */
+/*   Updated: 2026/11/10 11:47:15 by hhdili           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static size_t	w_count(const char *s)
 	found = 0;
 	while (*s)
 	{
-		if (*s == ft_isspace(*s))
+		if (ft_isspace(*s))
 			found = 0;
 		else if (found == 0)
 		{
@@ -58,7 +58,7 @@ static void	split_argument(t_ps *ps, char *s)
 			s++;
 		len = 0;
 		while (s[len] && !ft_isspace(s[len]))
-			s++;
+			len++;
 		if (len > 0)
 			handle_word(ps, s, len);
 		s += len;
