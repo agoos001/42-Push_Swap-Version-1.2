@@ -6,7 +6,7 @@
 /*   By: hhdili <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 12:45:40 by hhdili            #+#    #+#             */
-/*   Updated: 2026/11/08 10:27:59 by hhdili           ###   ########.fr       */
+/*   Updated: 2026/11/10 10:28:34 by hhdili           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ size_t		ft_strlen(char const *s);
 void		ft_putchar_fd(const char c, int fd);
 void		ft_putstr_fd(const char *s, int fd);
 void		ft_putendl_fd(const char *s, int fd);
+int			ft_isspace(int c);
 // stack elements
 int			st_get(t_stack *s, int i);
 int			st_pop(t_stack *s);
@@ -39,7 +40,7 @@ void		op(t_ps *ps, t_op code);
 void		op_apply(t_ps *ps, t_op code);
 void		op_repeat(t_ps *ps, t_op code, int n);
 // parsing
-void		parse_args(t_stack *s, int arc, char **argv);
+void		parse_args(t_ps *ps, int argc, char **argv);
 int			parse_int(char *s, int len, int *out);
 int			read_flag(t_ps *ps, char *word, int len);
 // analysis

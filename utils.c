@@ -6,7 +6,7 @@
 /*   By: hhdili <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 12:46:13 by hhdili            #+#    #+#             */
-/*   Updated: 2026/11/07 12:46:13 by hhdili           ###   ########.fr       */
+/*   Updated: 2026/11/10 09:14:31 by hhdili           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,11 @@ size_t	ft_strlen(char const *s)
 	while (s[i])
 		i++;
 	return (i);
+}
+
+int	ft_isspace(int c)
+{
+	return (c == ' ' || (c >= 9 && c <= 13));
 }
 
 void	ft_putchar_fd(const char c, int fd)
