@@ -6,7 +6,7 @@
 /*   By: hhdili <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 12:45:40 by hhdili            #+#    #+#             */
-/*   Updated: 2026/11/10 10:28:34 by hhdili           ###   ########.fr       */
+/*   Updated: 2026/11/10 11:37:43 by hhdili           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,13 @@
 void		init_ps(t_ps *ps);
 void		free_ps(t_ps *ps);
 void		exit_er(t_ps *ps);
+void		free_all(t_ps *ps);
 // utils
 size_t		ft_strlen(char const *s);
 void		ft_putchar_fd(const char c, int fd);
 void		ft_putstr_fd(const char *s, int fd);
 void		ft_putendl_fd(const char *s, int fd);
+void		ft_putnbr_fd(long n, int fd);
 int			ft_isspace(int c);
 // stack elements
 int			st_get(t_stack *s, int i);

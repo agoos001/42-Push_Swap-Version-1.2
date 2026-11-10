@@ -6,7 +6,7 @@
 /*   By: hhdili <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/08 10:03:49 by hhdili            #+#    #+#             */
-/*   Updated: 2026/11/09 09:49:09 by r03b             ###   ########.fr       */
+/*   Updated: 2026/11/10 11:41:49 by hhdili           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
@@ -62,7 +62,7 @@ void	op(t_ps *ps, t_op code)
 	ft_putendl_fd(op_name(code), 1);
 }
 
-void	repeat_op(t_ps *ps, t_op code, int n)
+void	op_repeat(t_ps *ps, t_op code, int n)
 {
 	while (n-- > 0)
 		op(ps, code);
